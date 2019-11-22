@@ -14,7 +14,8 @@ import NavMenu from './components/NavMenu/NavMenu';
 import Posts from './pages/posts/Posts';
 import PostForm from './pages/posts/PostForm';
 import FaceDude from './pages/FaceDude/FaceDude';
-import {Messages} from './components/messages/Messages';
+import Users from './pages/Users/Users';
+import { Messages } from './components/messages/Messages';
 import store from './redux/store';
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
           <div className="app-body">
               <Route exact path="/" component={FaceDude} />
               <Route path="/redux" component={ReduxSection} />
-              <Route path="/topics" component={null} />
+              <Route path="/users" component={Users} />
           </div>
           
         </Provider>

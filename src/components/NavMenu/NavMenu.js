@@ -31,7 +31,7 @@ export default class NavMenu extends Component {
                     <Link to="/redux">Redux</Link>
                 </li>
                 <li>
-                    <Link to="/topics">Topics</Link>
+                    <Link to="/users">Users</Link>
                 </li>
             </ul>
             <button className="nav-menu--open">{(this.state.isClosed) ? <i className="fas fa-bars"></i> : <i className="fas fa-times"></i>}</button>

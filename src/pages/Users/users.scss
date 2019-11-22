@@ -1,0 +1,39 @@
+.users {
+    padding: 20px;
+
+    &__list {
+        padding:0;
+        margin:0;
+        display:flex;
+        flex-wrap:wrap;
+        
+
+    }
+    &__item{
+        display:flex;
+        flex-wrap: wrap;
+        text-align: center;
+        list-style-type:none;
+        text-transform: capitalize;
+        display:inline-block;
+        padding:20px 10px;
+        box-sizing: border-box;
+        width: 33%
+        
+    }
+    &__name{
+        font-family:roboto;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    &__age{
+        margin-top: 0;
+    }
+
+    &__avatar{
+        border-radius:64px;
+        width:128px;
+        height:128px;
+    }
+}
