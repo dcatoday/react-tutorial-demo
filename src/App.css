@@ -1,14 +1,10 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 40vmin;
+  height: 200px;
+  pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #233D4D;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,5 +14,37 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #61dafb;
+}
+
+.post-data {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.app-body {
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+body .p-inputtext {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 701px) {
+  .app-body {
+    margin-left: 180px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -1,0 +1,94 @@
+$primary-text-color: #233D4D;
+$highlight-text-color: #FCCA46;
+$secondary-text-color: #A1C181;
+
+.app-navigation-menu {
+    padding: 50px;
+    position: relative;
+    // width: 80px;
+    background-color: $secondary-text-color;
+    position:fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: left 300ms ease;
+    z-index: 10;
+
+    .nav-menu--open {
+      display: none;
+      font-size: 20px;
+      padding: 5px 10px;
+      background-color: #e2e2e2;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    @media screen and(max-width: 700px) {
+        &.closed {
+          left: -100%;
+        }
+
+        .nav-menu--open {
+          position:fixed;
+          display:block;
+          right:10px;
+          z-index:9999;
+          top:10px;
+        }
+    }
+
+    @media screen and(max-width: 300px) {
+      &.closed {
+        left: -135%;
+      }
+    }
+
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100;
+        color: $primary-text-color;
+        margin: 20px 38px;
+      }
+      ul{
+        padding:0;
+        list-style-type: none;
+      }
+      ul li a{
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100;
+        line-height: 40px;
+        padding: 5px 20px;
+        color: $primary-text-color;
+        font-weight: normal;
+      }
+      ul li a::before{
+        content: " ";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 55px;
+        margin: 15px -10px;
+        border: 1px solid $secondary-text-color;
+        background: #fff;
+        border-radius: 10px;
+      }
+      ul li::before{
+        content: "";
+        width: 2px;
+        height: 50px;
+        display: block;
+        position: absolute;
+        // left: -5px;
+        background: $primary-text-color;
+      }
+      ul li a:hover::before{
+        background: $highlight-text-color;
+      }
+      a:hover{
+        color: $highlight-text-color;
+        font-weight: bold;
+      }
+}
